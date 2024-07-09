@@ -10,7 +10,7 @@ import SignIn from './SignIn'
 import Home from './Home'
 import AddToCart from './AddToCart'
 // import Checkout from './checkout'
-
+import NotFound from './NotFound'
 function App() {
  
 
@@ -28,6 +28,7 @@ function App() {
       <Route path='/signUp' element={<SignUp />} />
       <Route path='/signIn' element={<SignIn />} />
       <Route path='/addToCart' element={<AddToCart />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
 
     </>
